@@ -18,7 +18,7 @@ const Home: React.FC = () => {
     AOS.init();
   }, []);
 
-  const images = ["/Ariena.jpg", "/Riena.jpg"];
+  const images = ["/Zaychiku.png", "/Riena.jpg"];
 
   const handleImageChange = () => {
     const newIndex = (imageIndex + 1) % images.length;
