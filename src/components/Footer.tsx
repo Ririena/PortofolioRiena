@@ -5,8 +5,8 @@ import { GoRepo } from "react-icons/go";
 const Footer: React.FC = () => {
   return (
     <footer className="shadow-xl py-6 w-full bg-white mt-auto">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+        <div className="text-lg mb-4 sm:mb-0 sm:mr-4">
           <p className="font-light font-montserrat">
             &copy; 2024 Ayrienetsu &amp; All Rights Reserved &amp;{" "}
             <span>Duivion</span>
