@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  
   :root {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -77,6 +78,12 @@
   }
 }
 
+@layer utilities {
+  .viu {
+    @apply mb-[3px] mr-[3px] border-2 border-foreground shadow;
+  }
+}
+
 /* Aturan untuk mode gelap (dark mode) */
 @media (prefers-color-scheme: dark) {
   @layer base {
@@ -84,5 +91,11 @@
       @apply bg-background text-foreground; /* Warna teks diatur menjadi putih */
       font-feature-settings: "rlig" 1, "calt" 1;
     }
+  }
+}
+
+@layer utilities {
+  .rounded-image {
+    @apply rounded-full; /* Membuat gambar menjadi melingkar */
   }
 }
